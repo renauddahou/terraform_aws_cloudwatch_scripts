@@ -1,5 +1,3 @@
-
-/*
 resource "aws_launch_template" "EC2_Launch_Template" {
   name_prefix   = "EC2-Launch-Template"
   image_id      = "ami-0f540030bb04d884a"
@@ -53,4 +51,3 @@ resource "aws_cloudwatch_metric_alarm" "EC2_metric_alarm" {
   alarm_description = "This metric monitors ec2 cpu utilization"
   alarm_actions     = [aws_autoscaling_policy.EC2_AutoScaling_Policy.arn]
 }
-*/
