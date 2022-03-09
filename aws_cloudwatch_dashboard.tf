@@ -1,4 +1,3 @@
-/*
 resource "aws_cloudwatch_dashboard" "EC2_Dashboard" {
   dashboard_name = "EC2-Dashboard"
 
@@ -45,4 +44,3 @@ resource "aws_cloudwatch_dashboard" "EC2_Dashboard" {
 }
 EOF
 }
-*/
