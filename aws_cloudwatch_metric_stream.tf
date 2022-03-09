@@ -1,4 +1,3 @@
-/*
 resource "aws_cloudwatch_metric_stream" "main" {
   name          = "my-metric-stream"
   role_arn      = aws_iam_role.metric_stream_to_firehose.arn
@@ -115,4 +114,3 @@ resource "aws_kinesis_firehose_delivery_stream" "s3_stream" {
     bucket_arn = aws_s3_bucket.bucket.arn
   }
 }
-*/
