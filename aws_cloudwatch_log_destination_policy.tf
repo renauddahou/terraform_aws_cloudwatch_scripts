@@ -1,4 +1,4 @@
-/*resource "aws_cloudwatch_log_destination" "demo_destination" {
+resource "aws_cloudwatch_log_destination" "demo_destination" {
   name       = "test_destination"
   role_arn   = aws_iam_role.cloudwatch_log_destination_demo_role.arn
   target_arn = aws_kinesis_stream.demo_kinesis_stream.arn
@@ -65,4 +65,3 @@ resource "aws_cloudwatch_log_destination_policy" "demo_destination_policy" {
   destination_name = aws_cloudwatch_log_destination.demo_destination.name
   access_policy    = data.aws_iam_policy_document.demo_destination_policy.json
 }
-*/
