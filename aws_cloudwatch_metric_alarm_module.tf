@@ -1,4 +1,4 @@
-/*module "metric_alarm" {
+module "metric_alarm" {
   source  = "terraform-aws-modules/cloudwatch/aws//modules/metric-alarm"
   version = "~> 2.0"
 
@@ -15,4 +15,3 @@
 
   alarm_actions = ["arn:aws:sns:us-east-2:585584209241:cpu_utilization"]
 }
-*/
