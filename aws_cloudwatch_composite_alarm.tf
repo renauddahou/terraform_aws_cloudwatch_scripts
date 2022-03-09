@@ -1,4 +1,4 @@
-/*resource "aws_cloudwatch_composite_alarm" "EC2_and_EBS" {
+resource "aws_cloudwatch_composite_alarm" "EC2_and_EBS" {
   alarm_description = "Composite alarm that monitors CPUUtilization and EBS Volume Read Operations"
   alarm_name        = "EC2_&EBS_Composite_Alarm"
   alarm_actions = [aws_sns_topic.EC2_and_EBS_topic.id]
@@ -54,4 +54,3 @@ resource "aws_sns_topic_subscription" "EC2_and_EBS_Subscription" {
     aws_sns_topic.EC2_and_EBS_topic
   ]
 }
-*/
